@@ -1,5 +1,19 @@
 const Kontak = require('../models/Kontak')
 
+
+const indexById = async (req, res, next) => {
+    try {
+        const kontak = await Kontak.findAll({
+            where: {
+                id: req.params.id
+            }
+        });
+        res.send(kontak[0]);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 const index = async (req, res, next) => {
     try {
         const kontak = await Kontak.findAll();
@@ -51,6 +65,7 @@ const destroy = async(req, res, next) => {
 }
 
 module.exports = {
+    indexById,
     index,
     create,
     update,
