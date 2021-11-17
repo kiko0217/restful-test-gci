@@ -1,0 +1,25 @@
+{
+  "name": "restful-api-gic",
+  "version": "1.0.0",
+  "description": "restful api untuk kontak dengan data nama, no HP, dan email.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "restful",
+    "mysql"
+  ],
+  "author": "yusron muttaqin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "db-migrate": "^0.11.13",
+    "db-migrate-mysql": "^2.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.9.0"
+  }
+}
